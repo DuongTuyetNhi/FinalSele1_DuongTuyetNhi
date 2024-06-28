@@ -14,6 +14,7 @@ public class BookTicketTest {
     String amount = "2";
     @Test(description = "User can book ticket with know price")
     public void BookTicket(){
+        DriverManagement.initDriver();
         DriverManagement.openRailwayPage();
         homePage.openLoginTab();
         loginPage.submitLoginForm(validUser);
